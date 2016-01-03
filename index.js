@@ -14,7 +14,7 @@ var coreUtils = {
   },
   registerUtils: function(obj) {
     Object.keys(obj).map(function(util) {
-      coreUtils.registerComponent(util, obj[util]);
+      coreUtils.registerUtil(util, obj[util]);
     });
   },
   getUtils: function() {

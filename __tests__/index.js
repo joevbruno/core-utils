@@ -14,7 +14,7 @@ describe('core-utils', function() {
   describe('registerUtil', function () {
     it('should add a util', function () {
       expect(coreUtils).to.not.have.property('API');
-      coreUI.registerUtil("API", API);
+      coreUtils.registerUtil('API', API);
       expect(coreUtils).to.have.property('API');
     });
   });
@@ -23,19 +23,19 @@ describe('core-utils', function() {
       expect(coreUtils).to.not.have.property('request');
       coreUtils.registerUtils(Us);
       expect(coreUtils).to.have.property('request');
-      expect(coreUtils).to.have.property('helpers');
+      expect(coreUtils).to.have.property('helper');
     });
   });
   describe('unregister', function () {
     it('should remove a util', function () {
       expect(coreUtils).to.have.property('request');
-      coreUtils.unregisterComponent('request');
+      coreUtils.unregisterUtil('request');
       expect(coreUtils).to.not.have.property('request');
     });
   });
   describe('get', function () {
     it('should return all utils', function () {
-      var comps = coreUtils.getUtilss();
+      var comps = coreUtils.getUtils();
       expect(comps).to.have.property('API');
     });
   });
