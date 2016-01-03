@@ -1,0 +1,31 @@
+{
+  "name": "core-utils",
+  "version": "0.1.4",
+  "description": "core-utils is a wrapper for your most used utils and is the companion to core-ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./__tests__"
+  },
+  "keywords": [
+    "React",
+    "helpers",
+    "wrapper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joevbruno/core-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joevbruno/core-utils/issues"
+  },
+  "homepage": "https://github.com/joevbruno/core-utils",
+  "author": "Joe Bruno <joevbruno@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "object-assign": "^4.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
